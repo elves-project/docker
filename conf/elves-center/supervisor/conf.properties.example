@@ -1,0 +1,25 @@
+#api server config
+server.port=9092
+
+#zookeeper config
+zookeeper.enabled=false
+zookeeper.host=127.0.0.1:2181
+zookeeper.outTime=10000
+zookeeper.root = /elves
+
+#mq basic config
+mq.ip=127.0.0.1
+mq.port=5672
+mq.user=admin
+mq.password=
+mq.exchange=elves
+
+#db config
+jdbc.url=jdbc\:mysql\://127.0.0.1\:3306/elves_supervisor?characterEncoding=UTF-8&amp;useOldAliasMetadataBehavior=true&amp;zeroDateTimeBehavior=convertToNull
+jdbc.username=root
+jdbc.password=root
+
+#FTP adress config
+ftp.res.ip=127.0.0.1
+ftp.res.user=admin
+ftp.res.pass=admin

@@ -1,0 +1,112 @@
+#!/bin/bash
+#download address
+elves_cron="https://github.com/gy-games/elves/releases/download/v0.1.3/elves-cron-linux-0.3.2.tar.gz"
+elves_dashboard="https://github.com/gy-games/elves/releases/download/v0.1.3/elves-dashboard-linux-0.0.1.tar.gz"
+elves_hearbeat="https://github.com/gy-games/elves/releases/download/v0.1.3/elves-heartbeat-linux-0.3.3.tar.gz"
+elves_openapi="https://github.com/gy-games/elves/releases/download/v0.1.3/elves-openapi-linux-0.3.6.tar.gz"
+elves_queue="https://github.com/gy-games/elves/releases/download/v0.1.3/elves-queue-linux-0.3.4.tar.gz"
+elves_scheduler="https://github.com/gy-games/elves/releases/download/v0.1.3/elves-scheduler-linux-0.3.3.tar.gz"
+elves_supervisor="https://github.com/gy-games/elves/releases/download/v0.1.3/elves-supervisor-linux-0.3.6.tar.gz"
+
+function download(){
+    elves_soft=($elves_cron $elves_dashboard $elves_hearbeat $elves_openapi $elves_queue $elves_scheduler $elves_supervisor)
+    cd package
+    for i in ${elves_soft[*]}
+    do 
+        pack_name=`echo $i | awk -F['/'] '{print $NF}'`
+        wget -O $pack_name $i
+        if [[ $? != 0 ]];then
+            echo -n "The $i download Error,please check"
+            exit 1
+        fi
+    done
+}
+
+function package_check(){
+    file_num=`ls -l package/ | grep "^-" | wc -l`
+    if [ $file_num -ne 7 ];then
+        echo "Software is not enough"
+        read -p "You want to clean package/* and  Re-download software?:[Y|N]" result
+        if [ $result == 'Y' ];then
+            rm -rf package/*
+            download
+        else
+           echo "You entered the error and the program exited automatically"
+           exit 1
+        fi
+        echo "All the sotfwary has been downloaded"
+    fi
+}
+
+function build(){
+    package_check
+    echo -e "\033[30;32m Begining build images: \033[0m"
+    docker build -t elves-cron:1.0 -f dockerfile/elves-center/elves-center-cron .
+    docker build -t elves-heartbeat:1.0 -f dockerfile/elves-center/elves-center-heartbeat .
+    docker build -t elves-queue:1.0 -f dockerfile/elves-center/elves-center-queue .
+    docker build -t elves-supervisor:1.0 -f dockerfile/elves-center/elves-center-supervisor .
+    docker build -t elves-dashboard:1.0 -f dockerfile/elves-center/elves-center-dashboard .
+    docker build -t elves-openapi:1.0 -f dockerfile/elves-center/elves-center-openapi .
+    docker build -t elves-scheduler:1.0 -f dockerfile/elves-center/elves-center-scheduler .
+    docker build -t centos-vsftp:1.0 -f dockerfile/elves-center/vsftp .
+    if [[ $? != 0 ]];then
+        echo -e "\033[30;32m Build images found Error,please check: \033[0m"
+        exit 1
+    fi
+    echo "Build images is sucessfuly"
+}
+
+function start_container(){
+
+    /usr/local/bin/docker-compose up -d
+    if [[ $? != 0 ]];then
+        echo  "docker-compse start Error,please check"
+        exit 1
+    fi
+
+}
+
+
+function insertsql(){
+    /usr/bin/docker exec -i mysql /bin/bash << EOF
+      mysql -uroot -p1q2w3e4r -h'mysql_host' -P3306 -e "CREATE DATABASE elves_cron  DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;"
+      mysql -uroot -p1q2w3e4r -h'mysql_host' -P3306 -e 'CREATE DATABASE elves_queue  DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;'
+      mysql -uroot -p1q2w3e4r -h'mysql_host' -P3306 -e 'CREATE DATABASE elves_supervisor  DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;'
+      mysql -uroot -p1q2w3e4r -hmysql_host elves_cron < /elves-database/cron_database.sql
+      mysql -uroot -p1q2w3e4r -hmysql_host elves_queue < /elves-database/queue_database.sql
+      mysql -uroot -p1q2w3e4r -hmysql_host elves_supervisor < /elves-database/supervisor_database.sql
+EOF
+    if [[ $? != 0 ]];then
+        echo -e "\033[30;35m Insert sql error,Please operate by yourself; or excute'./control install' again ! \033[0m"
+        exit 1
+    fi
+}
+
+
+function restart_container(){
+
+    /usr/bin/docker restart elves_queue
+    /usr/bin/docker restart elves_cron
+    /usr/bin/docker restart elves_supervisor
+
+}
+
+function error(){
+    echo "USAGE: $0 TABNAME"
+    echo "e.g.: $0 build|start|insertsql|restart" 
+}
+
+if [ "$1" == "" ]; then
+    error
+elif [ "$1" == "build" ];then
+    build
+elif [ "$1" == "start" ];then
+    start_container
+elif [ "$1" == "insertsql" ];then
+    insertsql
+elif [ "$1" == "restart" ];then
+    restart_container
+else
+    error
+fi
+

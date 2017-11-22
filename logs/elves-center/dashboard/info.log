@@ -1,0 +1,292 @@
+[INFO ] 2017-11-22 07:26:09,995 [cn.gyyx.elves.dashboard.listener.WebContextListener.initWebApplicationContext(WebContextListener.java:29)] conf.properties path :/elves_dashboard/conf/conf.properties
+[INFO ] 2017-11-22 07:26:11,036 [cn.gyyx.elves.util.CustomPropertyPlaceholderConfigurer.<init>(CustomPropertyPlaceholderConfigurer.java:29)] get project path :/elves_dashboard
+[INFO ] 2017-11-22 07:26:18,806 [cn.gyyx.elves.dashboard.listener.SpringContextLoaderListener.contextInitialized(SpringContextLoaderListener.java:29)] WebApplicationContext listener start ,ctx :Root WebApplicationContext: startup date [Wed Nov 22 07:26:10 UTC 2017]; root of context hierarchy
+[INFO ] 2017-11-22 07:26:18,929 [org.apache.curator.framework.imps.CuratorFrameworkImpl.start(CuratorFrameworkImpl.java:223)] Starting
+[INFO ] 2017-11-22 07:26:19,035 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+[INFO ] 2017-11-22 07:26:19,036 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:host.name=f5c1a528454f
+[INFO ] 2017-11-22 07:26:19,036 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.version=1.8.0_111
+[INFO ] 2017-11-22 07:26:19,037 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.vendor=Oracle Corporation
+[INFO ] 2017-11-22 07:26:19,037 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+[INFO ] 2017-11-22 07:26:19,038 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.class.path=./elves-dashboard-0.0.1-release.jar
+[INFO ] 2017-11-22 07:26:19,038 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+[INFO ] 2017-11-22 07:26:19,039 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.io.tmpdir=/tmp
+[INFO ] 2017-11-22 07:26:19,039 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.compiler=<NA>
+[INFO ] 2017-11-22 07:26:19,039 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:os.name=Linux
+[INFO ] 2017-11-22 07:26:19,040 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:os.arch=amd64
+[INFO ] 2017-11-22 07:26:19,040 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:os.version=3.10.0-327.el7.x86_64
+[INFO ] 2017-11-22 07:26:19,042 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:user.name=root
+[INFO ] 2017-11-22 07:26:19,042 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:user.home=/root
+[INFO ] 2017-11-22 07:26:19,043 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:user.dir=/elves_dashboard/bin
+[INFO ] 2017-11-22 07:26:19,048 [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)] Initiating client connection, connectString=zookeeper01:2181,zookeeper02:2181,zookeeper03:2181 sessionTimeout=10000 watcher=org.apache.curator.ConnectionState@5a59ca5e
+[INFO ] 2017-11-22 07:26:19,091 [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:966)] Opening socket connection to server zookeeper02.elves_elves_net/172.18.0.7:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ] 2017-11-22 07:26:23,341 [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:849)] Socket connection established to zookeeper02.elves_elves_net/172.18.0.7:2181, initiating session
+[INFO ] 2017-11-22 07:26:23,839 [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1207)] Session establishment complete on server zookeeper02.elves_elves_net/172.18.0.7:2181, sessionid = 0x25fe29d7b360000, negotiated timeout = 10000
+[INFO ] 2017-11-22 07:26:23,889 [org.apache.curator.framework.state.ConnectionStateManager.postState(ConnectionStateManager.java:194)] State change: CONNECTED
+[INFO ] 2017-11-22 07:26:27,993 [cn.gyyx.elves.dashboard.listener.SpringContextLoaderListener.contextInitialized(SpringContextLoaderListener.java:47)] register zookeeper supervisor node success
+[INFO ] 2017-11-22 07:27:00,159 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:28:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:29:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:30:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:31:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:32:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:33:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:34:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:35:00,010 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:36:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:37:00,014 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:42:37,253 [cn.gyyx.elves.dashboard.listener.WebContextListener.initWebApplicationContext(WebContextListener.java:29)] conf.properties path :/elves_dashboard/conf/conf.properties
+[INFO ] 2017-11-22 07:42:40,630 [cn.gyyx.elves.util.CustomPropertyPlaceholderConfigurer.<init>(CustomPropertyPlaceholderConfigurer.java:29)] get project path :/elves_dashboard
+[INFO ] 2017-11-22 07:42:42,126 [cn.gyyx.elves.dashboard.listener.SpringContextLoaderListener.contextInitialized(SpringContextLoaderListener.java:29)] WebApplicationContext listener start ,ctx :Root WebApplicationContext: startup date [Wed Nov 22 07:42:37 UTC 2017]; root of context hierarchy
+[INFO ] 2017-11-22 07:42:42,246 [org.apache.curator.framework.imps.CuratorFrameworkImpl.start(CuratorFrameworkImpl.java:223)] Starting
+[INFO ] 2017-11-22 07:42:42,259 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+[INFO ] 2017-11-22 07:42:42,260 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:host.name=134b93f4c904
+[INFO ] 2017-11-22 07:42:42,261 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.version=1.8.0_111
+[INFO ] 2017-11-22 07:42:42,261 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.vendor=Oracle Corporation
+[INFO ] 2017-11-22 07:42:42,261 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+[INFO ] 2017-11-22 07:42:42,262 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.class.path=./elves-dashboard-0.0.1-release.jar
+[INFO ] 2017-11-22 07:42:42,262 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+[INFO ] 2017-11-22 07:42:42,263 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.io.tmpdir=/tmp
+[INFO ] 2017-11-22 07:42:42,263 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.compiler=<NA>
+[INFO ] 2017-11-22 07:42:42,264 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:os.name=Linux
+[INFO ] 2017-11-22 07:42:42,264 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:os.arch=amd64
+[INFO ] 2017-11-22 07:42:42,265 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:os.version=3.10.0-327.el7.x86_64
+[INFO ] 2017-11-22 07:42:42,268 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:user.name=root
+[INFO ] 2017-11-22 07:42:42,268 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:user.home=/root
+[INFO ] 2017-11-22 07:42:42,269 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:user.dir=/elves_dashboard/bin
+[INFO ] 2017-11-22 07:42:42,271 [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)] Initiating client connection, connectString=zookeeper01:2181,zookeeper02:2181,zookeeper03:2181 sessionTimeout=10000 watcher=org.apache.curator.ConnectionState@70cf32e3
+[INFO ] 2017-11-22 07:42:42,335 [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:966)] Opening socket connection to server zookeeper03.elves_elves_net/172.18.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ] 2017-11-22 07:42:42,611 [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:849)] Socket connection established to zookeeper03.elves_elves_net/172.18.0.3:2181, initiating session
+[INFO ] 2017-11-22 07:42:42,790 [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1207)] Session establishment complete on server zookeeper03.elves_elves_net/172.18.0.3:2181, sessionid = 0x35fe2ac2f9f0001, negotiated timeout = 10000
+[INFO ] 2017-11-22 07:42:42,814 [org.apache.curator.framework.state.ConnectionStateManager.postState(ConnectionStateManager.java:194)] State change: CONNECTED
+[INFO ] 2017-11-22 07:42:43,226 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:42:44,584 [cn.gyyx.elves.dashboard.listener.SpringContextLoaderListener.contextInitialized(SpringContextLoaderListener.java:47)] register zookeeper supervisor node success
+[INFO ] 2017-11-22 07:43:00,010 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:44:00,013 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:45:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:46:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:47:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:48:00,010 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:49:00,011 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:50:00,013 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:51:00,011 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:52:00,014 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:53:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:54:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:55:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:56:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:57:00,010 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:58:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 07:59:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:00:00,014 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:01:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:02:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:03:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:04:00,010 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:05:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:06:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:07:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:08:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:09:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:10:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:11:00,011 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:12:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:13:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:14:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:15:00,007 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:16:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:17:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:18:00,010 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:19:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:20:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:21:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:22:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:35:03,857 [cn.gyyx.elves.dashboard.listener.WebContextListener.initWebApplicationContext(WebContextListener.java:29)] conf.properties path :/elves_dashboard/conf/conf.properties
+[INFO ] 2017-11-22 08:35:05,000 [cn.gyyx.elves.util.CustomPropertyPlaceholderConfigurer.<init>(CustomPropertyPlaceholderConfigurer.java:29)] get project path :/elves_dashboard
+[INFO ] 2017-11-22 08:35:16,725 [cn.gyyx.elves.dashboard.listener.SpringContextLoaderListener.contextInitialized(SpringContextLoaderListener.java:29)] WebApplicationContext listener start ,ctx :Root WebApplicationContext: startup date [Wed Nov 22 08:35:04 UTC 2017]; root of context hierarchy
+[INFO ] 2017-11-22 08:35:16,836 [org.apache.curator.framework.imps.CuratorFrameworkImpl.start(CuratorFrameworkImpl.java:223)] Starting
+[INFO ] 2017-11-22 08:35:16,849 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+[INFO ] 2017-11-22 08:35:16,849 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:host.name=6c4cd1b1d0bd
+[INFO ] 2017-11-22 08:35:16,850 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.version=1.8.0_111
+[INFO ] 2017-11-22 08:35:16,850 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.vendor=Oracle Corporation
+[INFO ] 2017-11-22 08:35:16,851 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+[INFO ] 2017-11-22 08:35:16,851 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.class.path=./elves-dashboard-0.0.1-release.jar
+[INFO ] 2017-11-22 08:35:16,851 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+[INFO ] 2017-11-22 08:35:16,852 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.io.tmpdir=/tmp
+[INFO ] 2017-11-22 08:35:16,852 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.compiler=<NA>
+[INFO ] 2017-11-22 08:35:16,853 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:os.name=Linux
+[INFO ] 2017-11-22 08:35:16,853 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:os.arch=amd64
+[INFO ] 2017-11-22 08:35:16,853 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:os.version=3.10.0-327.el7.x86_64
+[INFO ] 2017-11-22 08:35:16,856 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:user.name=root
+[INFO ] 2017-11-22 08:35:16,856 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:user.home=/root
+[INFO ] 2017-11-22 08:35:16,857 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:user.dir=/elves_dashboard/bin
+[INFO ] 2017-11-22 08:35:16,858 [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)] Initiating client connection, connectString=zookeeper01:2181,zookeeper02:2181,zookeeper03:2181 sessionTimeout=10000 watcher=org.apache.curator.ConnectionState@70cf32e3
+[INFO ] 2017-11-22 08:35:16,914 [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:966)] Opening socket connection to server zookeeper03.elves_elves_net/172.18.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ] 2017-11-22 08:35:26,768 [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:849)] Socket connection established to zookeeper03.elves_elves_net/172.18.0.3:2181, initiating session
+[INFO ] 2017-11-22 08:35:30,490 [org.apache.zookeeper.ZooKeeper.close(ZooKeeper.java:684)] Session: 0x0 closed
+[INFO ] 2017-11-22 08:35:30,491 [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)] Initiating client connection, connectString=zookeeper01:2181,zookeeper02:2181,zookeeper03:2181 sessionTimeout=10000 watcher=org.apache.curator.ConnectionState@70cf32e3
+[INFO ] 2017-11-22 08:35:30,490 [org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:509)] EventThread shut down
+[INFO ] 2017-11-22 08:35:30,496 [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:966)] Opening socket connection to server zookeeper02.elves_elves_net/172.18.0.6:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ] 2017-11-22 08:35:30,497 [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:849)] Socket connection established to zookeeper02.elves_elves_net/172.18.0.6:2181, initiating session
+[INFO ] 2017-11-22 08:35:32,111 [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1207)] Session establishment complete on server zookeeper02.elves_elves_net/172.18.0.6:2181, sessionid = 0x25fe2dc8b2e0003, negotiated timeout = 10000
+[INFO ] 2017-11-22 08:35:32,631 [org.apache.curator.framework.state.ConnectionStateManager.postState(ConnectionStateManager.java:194)] State change: CONNECTED
+[INFO ] 2017-11-22 08:35:33,983 [cn.gyyx.elves.dashboard.listener.SpringContextLoaderListener.contextInitialized(SpringContextLoaderListener.java:47)] register zookeeper supervisor node success
+[INFO ] 2017-11-22 08:36:05,578 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:37:00,011 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:38:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:39:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:39:31,896 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:39:31,921 [cn.gyyx.elves.util.mq.MessageProducer.call(MessageProducer.java:88)] back :{mqbody={"result":[{"last_hb_time":"2017-11-22 08:39:08","ip":"10.0.2.101","asset":"10.0.2.101","apps":{}},{"last_hb_time":"2017-11-22 08:38:46","ip":"10.12.2.15","asset":"10.12.2.15","apps":{}}],"count":2}, mqflag=cast, mqkey=heartbeat.dashboard}
+[INFO ] 2017-11-22 08:39:31,923 [cn.gyyx.elves.dashboard.service.impl.DashboardServiceImpl.getModuleStatus(DashboardServiceImpl.java:52)] search asset from heart back:{"result":[{"last_hb_time":"2017-11-22 08:39:08","ip":"10.0.2.101","asset":"10.0.2.101","apps":{}},{"last_hb_time":"2017-11-22 08:38:46","ip":"10.12.2.15","asset":"10.12.2.15","apps":{}}],"count":2}
+[INFO ] 2017-11-22 08:40:00,011 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:40:01,927 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:41:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:42:00,011 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:43:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:44:00,010 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:45:00,011 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:46:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:47:00,010 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:48:00,016 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:49:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:50:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:51:00,012 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:52:00,010 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:53:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:54:00,015 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 08:55:00,010 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:03:06,917 [cn.gyyx.elves.dashboard.listener.WebContextListener.initWebApplicationContext(WebContextListener.java:29)] conf.properties path :/elves_dashboard/conf/conf.properties
+[INFO ] 2017-11-22 09:03:44,967 [cn.gyyx.elves.util.CustomPropertyPlaceholderConfigurer.<init>(CustomPropertyPlaceholderConfigurer.java:29)] get project path :/elves_dashboard
+[INFO ] 2017-11-22 09:03:46,600 [cn.gyyx.elves.dashboard.listener.SpringContextLoaderListener.contextInitialized(SpringContextLoaderListener.java:29)] WebApplicationContext listener start ,ctx :Root WebApplicationContext: startup date [Wed Nov 22 09:03:09 UTC 2017]; root of context hierarchy
+[INFO ] 2017-11-22 09:03:46,763 [org.apache.curator.framework.imps.CuratorFrameworkImpl.start(CuratorFrameworkImpl.java:223)] Starting
+[INFO ] 2017-11-22 09:03:46,780 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+[INFO ] 2017-11-22 09:03:46,780 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:host.name=cf0a22b4982c
+[INFO ] 2017-11-22 09:03:46,781 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.version=1.8.0_111
+[INFO ] 2017-11-22 09:03:46,781 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.vendor=Oracle Corporation
+[INFO ] 2017-11-22 09:03:46,782 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+[INFO ] 2017-11-22 09:03:46,782 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.class.path=./elves-dashboard-0.0.1-release.jar
+[INFO ] 2017-11-22 09:03:46,783 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+[INFO ] 2017-11-22 09:03:46,783 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.io.tmpdir=/tmp
+[INFO ] 2017-11-22 09:03:46,784 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.compiler=<NA>
+[INFO ] 2017-11-22 09:03:46,784 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:os.name=Linux
+[INFO ] 2017-11-22 09:03:46,785 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:os.arch=amd64
+[INFO ] 2017-11-22 09:03:46,785 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:os.version=3.10.0-327.el7.x86_64
+[INFO ] 2017-11-22 09:03:46,789 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:user.name=root
+[INFO ] 2017-11-22 09:03:46,789 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:user.home=/root
+[INFO ] 2017-11-22 09:03:46,789 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:user.dir=/elves_dashboard/bin
+[INFO ] 2017-11-22 09:03:46,791 [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)] Initiating client connection, connectString=zookeeper01:2181,zookeeper02:2181,zookeeper03:2181 sessionTimeout=10000 watcher=org.apache.curator.ConnectionState@5a59ca5e
+[INFO ] 2017-11-22 09:03:46,848 [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:966)] Opening socket connection to server zookeeper02.elves_elves_net/172.18.0.6:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ] 2017-11-22 09:03:47,012 [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:849)] Socket connection established to zookeeper02.elves_elves_net/172.18.0.6:2181, initiating session
+[INFO ] 2017-11-22 09:03:47,123 [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1207)] Session establishment complete on server zookeeper02.elves_elves_net/172.18.0.6:2181, sessionid = 0x25fe2f5ca850001, negotiated timeout = 10000
+[INFO ] 2017-11-22 09:03:47,175 [org.apache.curator.framework.state.ConnectionStateManager.postState(ConnectionStateManager.java:194)] State change: CONNECTED
+[INFO ] 2017-11-22 09:03:47,347 [cn.gyyx.elves.dashboard.listener.SpringContextLoaderListener.contextInitialized(SpringContextLoaderListener.java:47)] register zookeeper supervisor node success
+[INFO ] 2017-11-22 09:05:00,153 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:06:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:07:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:08:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:09:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:10:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:11:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:12:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:13:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:14:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:15:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:16:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:17:00,012 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:18:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:19:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:20:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:21:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:22:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:23:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:24:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:25:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:26:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:27:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:28:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:29:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:30:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:31:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:32:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:33:00,007 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:34:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:35:00,010 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:36:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:37:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:38:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:39:00,010 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:40:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:41:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:42:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:43:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:44:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:45:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:46:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:47:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:48:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:49:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:50:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:51:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:52:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:53:00,007 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:54:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:55:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:56:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:57:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:58:00,007 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 09:59:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:00:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:01:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:02:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:03:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:04:00,007 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:05:00,007 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:06:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:07:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:08:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:09:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:10:00,007 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:11:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:12:00,010 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:13:00,007 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:14:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:15:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:16:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 10:17:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 12:09:46,514 [cn.gyyx.elves.dashboard.listener.WebContextListener.initWebApplicationContext(WebContextListener.java:29)] conf.properties path :/elves_dashboard/conf/conf.properties
+[INFO ] 2017-11-22 12:10:03,992 [cn.gyyx.elves.util.CustomPropertyPlaceholderConfigurer.<init>(CustomPropertyPlaceholderConfigurer.java:29)] get project path :/elves_dashboard
+[INFO ] 2017-11-22 12:10:10,638 [cn.gyyx.elves.dashboard.listener.SpringContextLoaderListener.contextInitialized(SpringContextLoaderListener.java:29)] WebApplicationContext listener start ,ctx :Root WebApplicationContext: startup date [Wed Nov 22 12:09:55 UTC 2017]; root of context hierarchy
+[INFO ] 2017-11-22 12:10:10,723 [org.apache.curator.framework.imps.CuratorFrameworkImpl.start(CuratorFrameworkImpl.java:223)] Starting
+[INFO ] 2017-11-22 12:10:10,732 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+[INFO ] 2017-11-22 12:10:10,732 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:host.name=7b6e6fb6dffd
+[INFO ] 2017-11-22 12:10:10,732 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.version=1.8.0_111
+[INFO ] 2017-11-22 12:10:10,733 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.vendor=Oracle Corporation
+[INFO ] 2017-11-22 12:10:10,733 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+[INFO ] 2017-11-22 12:10:10,733 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.class.path=./elves-dashboard-0.0.1-release.jar
+[INFO ] 2017-11-22 12:10:10,734 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+[INFO ] 2017-11-22 12:10:10,734 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.io.tmpdir=/tmp
+[INFO ] 2017-11-22 12:10:10,734 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:java.compiler=<NA>
+[INFO ] 2017-11-22 12:10:10,734 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:os.name=Linux
+[INFO ] 2017-11-22 12:10:10,735 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:os.arch=amd64
+[INFO ] 2017-11-22 12:10:10,735 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:os.version=3.10.0-327.el7.x86_64
+[INFO ] 2017-11-22 12:10:10,737 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:user.name=root
+[INFO ] 2017-11-22 12:10:10,737 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:user.home=/root
+[INFO ] 2017-11-22 12:10:10,738 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)] Client environment:user.dir=/elves_dashboard/bin
+[INFO ] 2017-11-22 12:10:10,739 [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)] Initiating client connection, connectString=zookeeper01:2181,zookeeper02:2181,zookeeper03:2181 sessionTimeout=10000 watcher=org.apache.curator.ConnectionState@70cf32e3
+[INFO ] 2017-11-22 12:10:11,381 [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:966)] Opening socket connection to server zookeeper01.elves_elves_net/172.18.0.8:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ] 2017-11-22 12:10:11,694 [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:849)] Socket connection established to zookeeper01.elves_elves_net/172.18.0.8:2181, initiating session
+[INFO ] 2017-11-22 12:10:12,015 [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1207)] Session establishment complete on server zookeeper01.elves_elves_net/172.18.0.8:2181, sessionid = 0x15fe3a0dd7f0000, negotiated timeout = 10000
+[INFO ] 2017-11-22 12:10:12,022 [org.apache.curator.framework.state.ConnectionStateManager.postState(ConnectionStateManager.java:194)] State change: CONNECTED
+[INFO ] 2017-11-22 12:10:12,929 [cn.gyyx.elves.dashboard.listener.SpringContextLoaderListener.contextInitialized(SpringContextLoaderListener.java:47)] register zookeeper supervisor node success
+[INFO ] 2017-11-22 12:10:28,623 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 12:11:00,012 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 12:12:00,010 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 12:13:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 12:14:00,015 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 12:14:05,907 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 12:14:45,998 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 12:14:46,008 [cn.gyyx.elves.util.mq.MessageProducer.call(MessageProducer.java:88)] back :{mqbody={"result":[{"last_hb_time":"2017-11-22 12:14:08","ip":"10.0.2.101","asset":"10.0.2.101","apps":{}},{"last_hb_time":"2017-11-22 12:13:46","ip":"10.12.2.15","asset":"10.12.2.15","apps":{}}],"count":2}, mqflag=cast, mqkey=heartbeat.dashboard}
+[INFO ] 2017-11-22 12:14:46,009 [cn.gyyx.elves.dashboard.service.impl.DashboardServiceImpl.getModuleStatus(DashboardServiceImpl.java:52)] search asset from heart back:{"result":[{"last_hb_time":"2017-11-22 12:14:08","ip":"10.0.2.101","asset":"10.0.2.101","apps":{}},{"last_hb_time":"2017-11-22 12:13:46","ip":"10.12.2.15","asset":"10.12.2.15","apps":{}}],"count":2}
+[INFO ] 2017-11-22 12:15:00,009 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 12:16:00,010 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 12:17:00,011 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.
+[INFO ] 2017-11-22 12:18:00,008 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:50)] MessageProcesserThread process message end.

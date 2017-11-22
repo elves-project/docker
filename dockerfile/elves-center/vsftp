@@ -1,0 +1,7 @@
+FROM docker.io/centos:6.8
+MAINTAINER chenjiayun <jiayun@gyyx.cn>
+RUN yum -y install vsftpd
+RUN useradd ftpuser && echo "1q2w3e4r" | passwd --stdin ftpuser
+RUN mkdir -p /data/elves/ftp
+RUN chmod 777 /data/elves/ftp
+EXPOSE 21

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+     http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+     http://www.springframework.org/schema/rabbit
+     http://www.springframework.org/schema/rabbit/spring-rabbit-1.3.xsd">
+
+    <bean id="customConfigLoader" class="cn.gyyx.elves.util.CustomPropertyPlaceholderConfigurer"/>
+
+	<rabbit:connection-factory id="connectionFactory" channel-cache-size="10" username="${mq.user}" password="${mq.password}" host="${mq.ip}" port="${mq.port}" />
+
+	<rabbit:admin connection-factory="connectionFactory"/>
+
+	<!--topic 匹配传输-->
+    <rabbit:template id="topicTemplate"  connection-factory="connectionFactory" exchange="${mq.exchange}"/>
+
+    <rabbit:queue name="heartbeat" durable="true" auto-delete="false" exclusive="false" />
+
+    <rabbit:topic-exchange name="${mq.exchange}">
+        <rabbit:bindings>
+            <rabbit:binding queue="heartbeat" pattern="*.heartbeat" />
+        </rabbit:bindings>
+    </rabbit:topic-exchange>
+
+    <rabbit:listener-container connection-factory="connectionFactory" concurrency="5" prefetch="100" acknowledge="auto">
+        <rabbit:listener ref="messageHandler" queues="heartbeat"/>
+    </rabbit:listener-container>
+
+    <bean id="messageHandler" class="cn.gyyx.elves.util.mq.MessageHandler"/>
+
+	<bean id ="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+		<property name ="corePoolSize" value ="50" />
+		<property name ="keepAliveSeconds" value ="300" />
+		<property name ="maxPoolSize" value ="500" />
+		<property name ="queueCapacity" value ="500" />
+	</bean>
+</beans>

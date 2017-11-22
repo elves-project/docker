@@ -1,0 +1,6 @@
+[ERROR] 2017-11-22 08:40:14,539 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:43)] Message structure error!
+ [ERROR] 2017-11-22 08:40:34,963 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:43)] Message structure error!
+ [ERROR] 2017-11-22 08:41:15,077 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:43)] Message structure error!
+ [ERROR] 2017-11-22 12:14:16,001 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:43)] Message structure error!
+ [ERROR] 2017-11-22 12:14:37,856 [cn.gyyx.elves.util.mq.MessageProcesserThread.run(MessageProcesserThread.java:43)] Message structure error!
+ 

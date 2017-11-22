@@ -1,0 +1,17 @@
+#zookeeper config
+zookeeper.enabled  = true
+zookeeper.host=127.0.0.1:2181
+zookeeper.outTime=10000
+zookeeper.root = /elves
+
+#mq basic config
+mq.ip=127.0.0.1
+mq.port=5672
+mq.user=admin
+mq.password=
+mq.exchange=elves
+
+#thrift server config
+thrift.scheduler.port=10101
+thrift.agent.port=11101
+thrift.outTime=30000

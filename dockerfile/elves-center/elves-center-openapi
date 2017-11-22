@@ -1,0 +1,9 @@
+FROM docker.io/java:8-jdk
+MAINTAINER chenjiayun <jiayun@gyyx.cn>
+ADD package/elves-openapi* /elves_openapi
+WORKDIR /elves_openapi
+RUN mv conf/conf.properties.example conf/conf.properties
+RUN sed -i 's/nohup//g' ./control && sed -i '/java/s/ &//' ./control
+RUN chmod +x ./control
+#EXPOSE 5672
+CMD ["./control","start"]

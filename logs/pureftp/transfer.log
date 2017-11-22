@@ -1,0 +1,11 @@
+#Software: Pure-FTPd 1.0.36
+#Version: 1.0
+#Date: 2017-11-10 11:18:18
+#Fields: date time c-ip cs-method cs-uri-stem sc-status cs-username sc-bytes
+2017-11-10 12:35:19 192.168.8.56 []created /home/ftpusers/www/xshell5.rar 226 ftp 37367205
+2017-11-10 12:39:03 192.168.8.56 []created /home/ftpusers/www/Python-2.7.12.tgz 226 ftp 16870447
+2017-11-13 02:07:55 192.168.8.56 []sent /home/ftpusers/www/test 226 ftp 0
+2017-11-13 02:42:32 192.168.8.56 []created /home/ftpusers/www/new%2014.txt 226 ftp 764
+2017-11-13 03:17:47 localhost []created /home/ftpusers/www/111.txt 226 ftp 179
+2017-11-13 03:43:31 192.168.8.56 []created /home/ftpusers/www/manage2.py 226 ftp 8502
+2017-11-13 06:31:16 192.168.8.56 []sent /home/ftpusers/www/manage2.py 226 ftp 8502

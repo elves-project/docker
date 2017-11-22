@@ -1,0 +1,35 @@
+2017/11/10 11:47:00 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:47:01 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:47:01 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:47:02 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:47:04 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:47:06 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:47:09 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:47:16 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:47:29 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:47:55 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:48:47 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:50:30 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:51:36 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:51:37 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:51:37 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:51:38 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:51:40 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:51:42 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:51:45 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:51:52 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:52:05 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:52:31 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:53:23 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:55:06 [emerg] 1#1: invalid number of arguments in "root" directive in /etc/nginx/conf.d/default.conf:12
+2017/11/10 11:55:54 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/default.conf:15
+2017/11/10 11:55:55 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/default.conf:15
+2017/11/10 11:55:56 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/default.conf:15
+2017/11/10 11:55:57 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/default.conf:15
+2017/11/10 11:55:58 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/default.conf:15
+2017/11/10 11:56:00 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/default.conf:15
+2017/11/10 11:56:04 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/default.conf:15
+2017/11/10 11:56:11 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/default.conf:15
+2017/11/10 11:56:24 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/default.conf:15
+2017/11/15 21:35:57 [error] 7#7: *7 open() "/data/ftpdata/favicon.ico" failed (2: No such file or directory), client: 192.168.8.56, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "10.12.2.15"
+2017/11/16 02:50:46 [error] 7#7: *1 open() "/data/ftpdata/favicon.ico" failed (2: No such file or directory), client: 192.168.8.56, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "10.12.2.15"

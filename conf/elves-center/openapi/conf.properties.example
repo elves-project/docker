@@ -1,0 +1,25 @@
+#api server config
+server.port=9091
+
+#zookeeper config
+zookeeper.enabled=false
+zookeeper.host=127.0.0.1:2181
+zookeeper.outTime=10000
+zookeeper.root = /elves
+
+#mq basic config
+mq.ip=127.0.0.1
+mq.port=5672
+mq.user=root
+mq.password=root
+mq.exchange=elves
+
+#Auth Config    simple/supervisor            
+auth.mode = supervisor
+auth.id   = 1
+auth.key  = 123456    
+
+
+#Elves-Center Module Config
+cron.enabled  = true
+queue.enabled = true

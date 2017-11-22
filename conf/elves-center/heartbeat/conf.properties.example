@@ -1,0 +1,19 @@
+#zookeeper config
+zookeeper.enabled  = true
+zookeeper.host=127.0.0.1:2181
+zookeeper.outTime=10000
+zookeeper.root = /elves
+
+#mq basic config
+mq.ip=127.0.0.1
+mq.port=5672
+mq.user=admin
+mq.password=
+mq.exchange=elves
+
+#other config
+auth.mode= supervisor
+auth.localAppInfo={'app1':'1.0.1','app2':'1.0.2'}
+
+#thrift config
+thrift.heartbeat.port=11102

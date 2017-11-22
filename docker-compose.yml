@@ -1,0 +1,235 @@
+version: '2'
+services:
+    scheduler:
+        image: elves-scheduler:1.0
+        container_name: elves_scheduler
+        networks:
+          - elves_net
+        volumes:
+          - ./conf/elves-center/scheduler:/elves_scheduler/conf:ro
+          - ./logs/elves-center/scheduler:/elves_scheduler/logs
+        ports:
+          - "10101:10101"
+#          - "11101:11101"
+        restart: always
+        links:
+          - zookeeper01
+          - zookeeper02
+          - zookeeper03
+          - rabbitmq
+    cron:
+        image: elves-cron:1.0
+        container_name: elves_cron
+        networks:
+          - elves_net
+        volumes:
+          - ./conf/elves-center/cron:/elves_cron/conf:ro
+          - ./logs/elves-center/cron:/elves_cron/logs
+        restart: always
+        links:
+          - zookeeper01
+          - zookeeper02
+          - zookeeper03
+          - rabbitmq
+          - mysql
+    queue:
+        image: elves-queue:1.0
+        container_name: elves_queue
+        networks:
+          - elves_net
+        volumes:
+          - ./conf/elves-center/queue:/elves_queue/conf:ro
+          - ./logs/elves-center/queue:/elves_queue/logs
+        restart: always
+        links:
+          - zookeeper01
+          - zookeeper02
+          - zookeeper03
+          - rabbitmq
+          - mysql
+    openapi:
+        image: elves-openapi:1.0
+        container_name: elves_openapi
+        networks:
+          - elves_net
+        volumes:
+          - ./conf/elves-center/openapi:/elves_openapi/conf:ro
+          - ./logs/elves-center/openapi:/elves_openapi/logs
+        ports:
+          - "8080:80"
+        restart: always
+        links:
+          - zookeeper01
+          - zookeeper02
+          - zookeeper03
+          - rabbitmq
+
+    heartbeat:
+        image: elves-heartbeat:1.0
+        container_name: elves_heartbeat
+        networks:
+          - elves_net
+        volumes:
+          - ./conf/elves-center/heartbeat:/elves_heartbeat/conf:ro
+          - ./logs/elves-center/heartbeat:/elves_heartbeat/logs
+        restart: always
+        ports: 
+          - "11102:11102"
+        links:
+          - zookeeper01
+          - zookeeper02
+          - zookeeper03
+          - rabbitmq
+    supervisor:
+        image: elves-supervisor:1.0
+        container_name: elves_supervisor
+        networks:
+          - elves_net
+        volumes:
+          - ./conf/elves-center/supervisor:/elves_supervisor/conf:ro
+          - ./logs/elves-center/supervisor:/elves_supervisor/logs
+        ports:
+          - "9092:8003"
+        restart: always
+        links:
+          - zookeeper01
+          - zookeeper02
+          - zookeeper03
+          - rabbitmq
+          - mysql
+          - vsftp
+    dashboard:
+        image: elves-dashboard:1.0
+        container_name: elves_dashboard
+        networks:
+          - elves_net
+        volumes:
+          - ./conf/elves-center/dashboard:/elves_dashboard/conf:ro
+          - ./logs/elves-center/dashboard:/elves_dashboard/logs
+        ports:
+          - "8004:8004"
+        restart: always
+        links:
+          - zookeeper01
+          - zookeeper02
+          - zookeeper03
+          - rabbitmq
+    rabbitmq:
+        image: docker.io/rabbitmq:3.6.12-management
+        container_name: rabbitmq
+        networks:
+          - elves_net
+#        expose:
+#          - "15672"
+        ports:
+          - "15672:15672"
+        restart: always
+        environment:
+          - RABBITMQ_DEFAULT_USER=admin
+          - RABBITMQ_DEFAULT_PASS=1q2w3e4r
+        
+    mysql:
+        image: docker.io/mysql:5.7
+        container_name: mysql
+        hostname: mysql_host
+        restart: always
+        networks:
+          - elves_net
+        volumes:
+          - ./storage/mysql/datadir:/var/lib/mysql
+          - ./storage/mysql/elves-database:/elves-database
+        expose:
+          - "3306"
+        environment:
+          MYSQL_ROOT_PASSWORD: 1q2w3e4r
+
+    zookeeper01:
+        image: docker.io/zookeeper:3.4
+        container_name: zookeeper01
+        restart: always
+        networks:
+          - elves_net
+        expose:
+          - "2181"
+        environment:
+          ZOO_MY_ID: 1
+          ZOO_SERVERS: server.1=zookeeper01:2888:3888 server.2=zookeeper02:2888:3888 server.3=zookeeper03:2888:3888
+
+    zookeeper02:
+        image: docker.io/zookeeper:3.4
+        container_name: zookeeper02
+        restart: always
+        networks:
+          - elves_net
+        expose:
+          - "2181"
+        environment:
+          ZOO_MY_ID: 2
+          ZOO_SERVERS: server.1=zookeeper01:2888:3888 server.2=zookeeper02:2888:3888 server.3=zookeeper03:2888:3888
+
+    zookeeper03:
+        image: docker.io/zookeeper:3.4
+        container_name: zookeeper03
+        restart: always
+        networks:
+          - elves_net
+        expose:
+          - "2181"
+        environment:
+          ZOO_MY_ID: 3
+          ZOO_SERVERS: server.1=zookeeper01:2888:3888 server.2=zookeeper02:2888:3888 server.3=zookeeper03:2888:3888
+
+#    pureftp:
+#        image: docker.io/stilliard/pure-ftpd:hardened
+#        container_name: pureftp
+#        restart: always
+#        networks:
+#          - elves_net
+#        ports:
+#          - "21:21"
+#          - "30000-30009:30000-30009"
+#        volumes:
+#          - ./conf/pureftp/www:/home/ftpusers/www
+#          - ./conf/pureftp/password:/etc/pure-ftpd/passwd
+#          - ./logs/pureftp:/var/log/pure-ftpd
+#        environment:
+#          ADDED_FLAGS: -O w3c:/var/log/pure-ftpd/transfer.log
+#          PUBLICHOST: localhost
+#        command:
+#          /bin/bash -c "
+#            /run.sh -c 30 -C 10 -l puredb:/etc/pure-ftpd/pureftpd.pdb -E -j -R
+#          "
+    vsftp:
+        image: centos-vsftp:1.0
+        container_name: vsftp
+        restart: always
+        networks:
+          - elves_net
+        ports:
+          - "21:21"
+        command:
+          /bin/bash -c "
+           /etc/init.d/vsftpd start && tail -f /var/log/dracut.log
+
+         "
+        volumes:
+           - ./storage/vsftp/vsftpd.conf:/etc/vsftpd/vsftpd.conf:ro
+           - ./storage/vsftp/data:/data/elves/ftp
+
+    nginx:
+        image: docker.io/nginx:1.12
+        container_name: nginx
+        restart: always
+        networks:
+          - elves_net
+        ports:
+          - "80:80"
+        volumes:
+          - ./conf/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+          - ./conf/nginx/conf.d:/etc/nginx/conf.d
+          - ./storage/vsftp/data:/data/ftpdata
+          - ./logs/nginx:/var/log/nginx
+
+networks:
+    elves_net:
+        driver: bridge
