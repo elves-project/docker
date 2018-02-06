@@ -8,7 +8,7 @@
 
 ## git clone项目
 
-    git clone git@github.com:elves-project/docker.git
+    git clone https://github.com/elves-project/docker.git
 
 ## 构建container
 
