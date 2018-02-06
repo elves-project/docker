@@ -1,4 +1,4 @@
-FROM docker.io/java:8-jdk
+FROM registry.docker-cn.com/library/java:8-jdk
 MAINTAINER chenjiayun <jiayun@gyyx.cn>
 ADD package/elves-cron* /elves_cron
 WORKDIR /elves_cron
