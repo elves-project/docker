@@ -58,7 +58,7 @@ function build(){
 
 function start_container(){
 
-    /usr/local/bin/docker-compose up -d
+    /usr/bin/docker-compose up -d
     if [[ $? != 0 ]];then
         echo  "docker-compse start Error,please check"
         exit 1
