@@ -72,7 +72,8 @@
 
 ## 注意事项
 
-1. 若在执行./control build中，遇到wget无法下载，请手动下载Elves各组件，放至package目录下。再次执行./control build及后续操作。
-2. 在执行./control insertsql后，如有数据库插入失败，则再次运行./control insertsql即可，原因是第一次刷新创建数据库目录，再次执行即可插入，也可手动执行。
-3. docker-compose up -d 启动容器后，cron和queue状态为Resting,说明正在尝试连接mysql，执行./control restart即可。
+1. 若执行./control start命令出现 /usr/local/bin/docker-compose: No such file or directory, 需要把docker-compose拷贝到对应的目录下并授权即可。
+2. 若在执行./control build中，遇到wget无法下载，请手动下载Elves各组件，放至package目录下。再次执行./control build及后续操作。
+3. 在执行./control insertsql后，如有数据库插入失败，则再次运行./control insertsql即可，原因是第一次刷新创建数据库目录，再次执行即可插入，也可手动执行。
+4. docker-compose up -d 启动容器后，cron和queue状态为Resting,说明正在尝试连接mysql，执行./control restart即可。
 
