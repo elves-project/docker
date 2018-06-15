@@ -209,7 +209,7 @@ services:
           - "21:21"
         command:
           /bin/bash -c "
-           /etc/init.d/vsftpd start && tail -f /var/log/dracut.log
+           chmod 777 /data/elves/ftp && /etc/init.d/vsftpd start && tail -f /var/log/dracut.log
 
          "
         volumes:
